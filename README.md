@@ -26,3 +26,9 @@ kindlegen() {
     koenrh/kindlegen "$@"
 }
 ```
+
+## Building
+
+```bash
+docker build . -t nzmebooks/docker-kindlegen:1.0.0
+```
