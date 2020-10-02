@@ -10,7 +10,7 @@ You could run KindleGen in a container by executing the following `docker` comma
 ```bash
 docker run -it --rm \
   --volume "$PWD:/home/kindlegen" \
-  koenrh/kindlegen \
+  nzmebooks/kindlegen \
   /home/kindlegen/modern-vim.epub
 ```
 
@@ -23,7 +23,7 @@ kindlegen() {
   docker run -it --rm \
     --volume "$PWD:/home/kindlegen" \
     --name kindlegen \
-    koenrh/kindlegen "$@"
+    nzmebooks/kindlegen "$@"
 }
 ```
 
