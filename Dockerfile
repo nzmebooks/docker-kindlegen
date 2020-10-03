@@ -13,7 +13,7 @@ RUN adduser -u 1001 -D kindlegen \
 
 WORKDIR /tmp
 
-RUN curl "https://raw.githubusercontent.com/koenrh/docker-kindlegen/master/kindlegen/kindlegen_linux_2.6_i386_v${KINDLEGEN_VERSION/\./_}.tar.gz" \
+RUN curl "https://raw.githubusercontent.com/nzmebooks/docker-kindlegen/master/kindlegen/kindlegen_linux_2.6_i386_v${KINDLEGEN_VERSION/\./_}.tar.gz" \
   -o "kindlegen-$KINDLEGEN_VERSION.tar.gz" \
   && echo "$KINDLEGEN_CHECKSUM  kindlegen-$KINDLEGEN_VERSION.tar.gz" | sha256sum -c - \
   && mkdir -p /app \
